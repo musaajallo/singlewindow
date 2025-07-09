@@ -1,50 +1,77 @@
-# singlewindow
 
+# SINGLE WINDOW – GAMBIA BUSINESS GATEWAY
 
-This is a modern [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), renamed to **singlewindow**.
+**Version:** 1.0  
+**Date:** 2025-07-09  
+**Prepared by:** Musa A. Jallow
+
+## Overview
+
+Gambia Business Gateway (GBG) is a centralized digital platform designed to simplify business registration and compliance in The Gambia. It serves as a one-stop-shop for entrepreneurs and business owners to register, apply for legal documentation, and fulfill ongoing compliance obligations online.
 
 ## Features
 
-- ⚡ **Next.js 15.3.4** with App Router
-- 🎯 **TypeScript** for type safety
-- 🎨 **Tailwind CSS 4** for styling
-- ⚡ **Turbopack** for faster development
-- 📏 **ESLint** for code quality
-- 📁 **src/ directory** structure
+- End-to-end online business registration
+- Integration with key institutions (MOJ, GRA, SSHFC, Local Councils)
+- Document upload and digital submission
+- Compliance dashboard with reminders
+- Digital payments (Wave, Gamswitch)
+- Automated reminders for filing obligations
+- Admin panel for application and compliance management
+
+## Key Modules
+
+- **Business Name Search & Reservation:** Name availability check, reservation, and expiry notifications
+- **Online Application Submission:** Company registration forms, document upload, and MOJ API integration
+- **Payment Module:** Card, mobile money, and bank transfer support with receipts
+- **TIN Application:** GRA TIN API integration and status tracking
+- **Social Security Registration:** SSHFC integration and auto-enrollment
+- **Business License Application:** Area Council integration and document upload
+- **Compliance Dashboard:** Track annual/periodic obligations and deadlines
+- **Ongoing Compliance:** Annual returns, tax, social security, director/shareholder changes, license renewal
+
+## Technical Stack
+
+| Component        | Tech Stack                                 |
+|------------------|--------------------------------------------|
+| Frontend         | Next.js (15 with App Router)               |
+| Styling          | TailwindCSS / ShadCN UI                    |
+| Backend          | Node.js API (Next.js API routes or NestJS) |
+| Database         | PostgreSQL or MongoDB                      |
+| Auth             | Clerk/Auth.js/Supabase Auth                |
+| File Uploads     | Cloudinary or AWS S3                       |
+| Payments         | Wave & Gamswitch SDKs                      |
+| Integration APIs | MOJ, GRA, SSHFC, Area Councils             |
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-```bash
-npm run dev
-```
+You can start editing the app by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Admin & Compliance
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+- View and manage all applications and statuses
+- Download and edit submissions
+- Communicate with applicants
+- Manage payment records and compliance items
 
-## 🖥️ Windows Setup
+## Windows Setup
 
-This project includes comprehensive Windows-specific documentation:
+See the following for Windows-specific instructions:
 
-- **[Windows Setup Guide](.github/SETUP-WINDOWS.md)** - Complete installation and setup instructions for Windows
-- **[Windows Troubleshooting](.github/TROUBLESHOOTING-WINDOWS.md)** - Solutions for common Windows issues
-- **[PowerShell Commands](.github/WINDOWS-COMMANDS.md)** - Quick reference for PowerShell commands
+- **[Windows Setup Guide](.github/SETUP-WINDOWS.md)**
+- **[Windows Troubleshooting](.github/TROUBLESHOOTING-WINDOWS.md)**
+- **[PowerShell Commands](.github/WINDOWS-COMMANDS.md)**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed for use by the Gambia Business Gateway project team.
